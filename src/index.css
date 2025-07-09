@@ -1,0 +1,35 @@
+/* index.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  transition: background 0.4s ease;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+
+body.dark {
+  background: #121212;
+  color: #fff;
+}
+.app {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

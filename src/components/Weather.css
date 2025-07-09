@@ -1,0 +1,255 @@
+/* Weather.css */
+
+/* ==== Weather Container ==== */
+.weather {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(15px);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    animation: fadeIn 0.6s ease;
+    margin-right: 11rem;
+  }
+  
+  body.dark .weather {
+    background: rgba(30, 30, 30, 0.85);
+    color: white;
+  }
+  
+  /* ==== Dark Mode Toggle Button ==== */
+  .theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: #ffffffdd;
+    color: #333;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .theme-toggle:hover {
+    background: #ffe0b2;
+    transform: scale(1.05);
+  }
+  
+  body.dark .theme-toggle {
+    background: #444;
+    color: #fff;
+  }
+  
+  /* ==== Search Bar ==== */
+  .search-bar {
+    display: flex;
+    gap: 1rem;
+    background: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-top: 4rem;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  body.dark .search-bar {
+    background: #1f1f1f;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    background: #f0f0f0;
+  }
+  
+  body.dark .search-bar input {
+    background: #2c2c2c;
+    color: #fff;
+  }
+  
+  .search-bar img {
+    width: 44px;
+    height: 44px;
+    background: #ff7e5f;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  
+  .search-bar img:hover {
+    background: #feb47b;
+  }
+  
+  /* ==== Weather Top Info ==== */
+  .weather-top {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .weather-icon {
+    width: 120px;
+  }
+  
+  .weather-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .temperature {
+    font-size: 72px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .location {
+    font-size: 28px;
+    color: #555;
+  }
+  
+  body.dark .temperature,
+  body.dark .location {
+    color: #fff;
+  }
+  
+  /* ==== Weather Metrics ==== */
+  .weather-data {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+  }
+  
+  .weather-data .col {
+    background: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    min-width: 220px;
+    transition: transform 0.3s ease;
+  }
+  
+  .weather-data .col:hover {
+    transform: translateY(-5px);
+    background: #ffe0b2;
+  }
+  
+  .weather-data .col img {
+    width: 36px;
+  }
+  
+  .weather-data .col p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .weather-data .col span {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  body.dark .weather-data .col {
+    background: #2a2a2a;
+  }
+  
+  body.dark .weather-data .col p,
+  body.dark .weather-data .col span {
+    color: #eee;
+  }
+  
+  /* ==== Recent Searches ==== */
+  .recent {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 1rem;
+    border-radius: 12px;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .recent h3 {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .recent ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+  }
+  
+  .recent li {
+    padding: 8px 14px;
+    border-radius: 999px; /* pill-shaped */
+    margin: 6px;
+    background-color: #ffe0cc;
+    color: #333 !important;                 /* overrides link blue */
+    font-weight: 500;
+    text-decoration: none !important;       /* removes underline */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+  }
+  
+  .recent li:hover {
+    background-color: #ffccaa;
+    color: #000;
+    transform: scale(1.05);                /* adds hover pop effect */
+  }
+  
+  
+  body.dark .recent {
+    background: #2a2a2a;
+  }
+  
+  body.dark .recent h3,
+  body.dark .recent li {
+    color: #fff;
+    background-color: #333;
+    background-color: #333 !important;
+  color: #fff !important;
+  }
+  body.dark .recent li:hover {
+    background-color: #444 !important;
+    color: #f0f0f0 !important;
+  }
+  
+  /* ==== Animations ==== */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
