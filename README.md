@@ -24,20 +24,35 @@ API:
 - OpenWeatherMap API
 Folder Structure
 weather-app/
+
 ■■■ backend/
+
 ■ ■■■ models/
+
 ■ ■■■ routes/
+
 ■ ■■■ index.js
+
 ■ ■■■ .env
+
 ■■■ src/
+
 ■ ■■■ components/
+
 ■ ■ ■■■ Weather.jsx
+
 ■ ■■■ assets/
+
 ■ ■■■ App.jsx
+
 ■ ■■■ index.css
+
 ■ ■■■ Weather.css
+
 ■■■ package.json
+
 ■■■ README.md
+
 Environment Variables
 In backend/.env:
 PORT=5000
