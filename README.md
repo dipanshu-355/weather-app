@@ -29,14 +29,13 @@ weather-app/
 ■ ■■■ routes/
 ■ ■■■ index.js
 ■ ■■■ .env
-■■■ frontend/
-■ ■■■ src/
-■ ■ ■■■ components/
-■ ■ ■ ■■■ Weather.jsx
-■ ■ ■■■ assets/
-■ ■ ■■■ App.jsx
-■ ■ ■■■ index.css
-■ ■ ■■■ Weather.css
+■■■ src/
+■ ■■■ components/
+■ ■ ■■■ Weather.jsx
+■ ■■■ assets/
+■ ■■■ App.jsx
+■ ■■■ index.css
+■ ■■■ Weather.css
 ■■■ package.json
 ■■■ README.md
 Environment Variables
